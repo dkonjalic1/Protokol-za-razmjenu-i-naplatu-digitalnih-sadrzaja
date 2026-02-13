@@ -5,24 +5,20 @@ izdavača i pretplatnika. Protokol se sastoji iz dva dijela: server za distribuc
 klijentskih aplikacija korisnika. Server treba da podrži proizvoljan broj korisnika i izdavača.
 
 ## Funcionalnosti protokola
-razlikovati dva tipa korisnika: izdavaˇce (autore sadrˇzaja) i pretplatnike (korisnike koji
-konzumiraju sadrˇzaj);
-• registraciju korisnika na server pomo´cu URI-a (jedinstvenog alfanumeriˇckog identifikatora);
-• izdavaˇc moˇze objaviti digitalni sadrˇzaj (tekstualni, video, audio, interaktivni) uz definisanje cijene pristupa;
-• svaki korisnik moˇze pregledati listu dostupnih sadrˇzaja po kategorijama (npr. obrazovni, zabavni, tehniˇcki);
-• implementirati sistem pretplate na osnovu razliˇcitih modela:
-– mjeseˇcna pretplata na sadrˇzaje odredenog izdavaˇca,
-– jednokratna kupovina pojedinaˇcnog sadrˇzaja,
-– grupna pretplata za viˇse korisnika (porodiˇcni, akademski paket).
-• izdavaˇci mogu aˇzurirati cijene i statuse svojih sadrˇzaja;
-• centralni server vodi registar:
-– svih objavljenih sadrˇzaja,
-– aktivnih pretplata i transakcija,
-– svih korisniˇckih naloga i statusa pretplate.
-• uspostaviti sistem popusta na osnovu broja kupljenih sadrˇzaja ili duˇzine pretplate (npr.
-20% popusta nakon 10 kupljenih sadrˇzaja);
-• pretplatnici mogu ocjenjivati sadrˇzaje i davati komentare (uz moderaciju od strane
-izdavaˇca);
-• implementirati regionalni sistem sa najmanje dva servera (npr. evropski i ameriˇcki
-region) i omogu´citi replikaciju i sinhronizaciju sadrˇzaja izmedu regiona;
-• sva signalizacija izmedu klijenata i izdavaˇca mora i´ci iskljuˇcivo preko servera.
+- razlikovanje dva tipa korisnika: **izdavače** (autore sadržaja) i **pretplatnike** (korisnike koji konzumiraju sadržaj)
+- registracija korisnika na server pomoću URI-a (jedinstvenog alfanumeričkog identifikatora)
+- izdavač može objaviti digitalni sadržaj (tekstualni, video, audio, interaktivni) uz definisanje cijene pristupa
+- svaki korisnik može pregledati listu dostupnih sadržaja po kategorijama (npr. obrazovni, zabavni, tehnički)
+- sistem pretplate na osnovu različitih modela:
+   - mjesečna pretplata na sadržaje odredenog izdavača,
+   - jednokratna kupovina pojedinačnog sadržaja,
+   - grupna pretplata za više korisnika (porodični, akademski paket)
+- izdavači mogu ažurirati cijene i statuse svojih sadržaja
+- centralni server vodi registar:
+   - svih objavljenih sadržaja,
+   - aktivnih pretplata i transakcija,
+   - svih korisničkih naloga i statusa pretplate
+- uspostavljen sistem popusta na osnovu broja kupljenih sadržaja ili dužine pretplate (npr. 20% popusta nakon 10 kupljenih sadržaja)
+- pretplatnici mogu ocjenjivati sadržaje i davati komentare (uz moderaciju od strane izdavača)
+- implementiran regionalni sistem sa najmanje dva servera (npr. evropski i američki region) i omogućiti replikaciju i sinhronizaciju sadržaja izmedu regiona
+- sva signalizacija izmedu klijenata i izdavača mora ići isključivo preko servera

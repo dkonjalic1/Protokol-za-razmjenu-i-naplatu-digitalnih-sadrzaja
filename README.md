@@ -4,6 +4,9 @@ Cilj ovog projekta je dizajnirati i implementirati protokol za razmjenu i naplat
 izdavača i pretplatnika. Protokol se sastoji iz dva dijela: server za distribuciju sadržaja i
 klijentskih aplikacija korisnika. Server treba da podrži proizvoljan broj korisnika i izdavača.
 
+**NAPOMENA:** Radi se o projektu koji se realizira na Univerzitetu u Sarajevu, Elektrotehnički
+fakultet, Odsjek za telekomunikacije.
+
 ## Funcionalnosti protokola
 - razlikovanje dva tipa korisnika: **izdavače** (autore sadržaja) i **pretplatnike** (korisnike koji konzumiraju sadržaj)
 - registracija korisnika na server pomoću URI-a (jedinstvenog alfanumeričkog identifikatora)

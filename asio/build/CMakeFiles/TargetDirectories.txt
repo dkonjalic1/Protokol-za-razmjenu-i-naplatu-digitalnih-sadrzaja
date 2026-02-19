@@ -1,0 +1,2 @@
+/home/etftk/SDP/asio/build/CMakeFiles/edit_cache.dir
+/home/etftk/SDP/asio/build/CMakeFiles/rebuild_cache.dir

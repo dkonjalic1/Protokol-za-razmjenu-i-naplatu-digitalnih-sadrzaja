@@ -25,6 +25,12 @@ fakultet, Odsjek za telekomunikacije.
 🟢 sva signalizacija između klijenata i izdavača mora ići isključivo preko servera<br>
 
 ## Instalacija dependency-ja
+Za instalaciju Boost.Asio biblioteke Ubuntu/Debian sistemu:
+```
+sudo apt update
+sudo apt-get install libboost-all-dev
+```
+
 
 ## Uputstvo za pokretanje
 Nakon instalacije potrebnih dependency-ja, potrebno je kompajlirati izvorni kod u izvršne datoteke. Terminal pokrenuti u projektnom direktoriju.

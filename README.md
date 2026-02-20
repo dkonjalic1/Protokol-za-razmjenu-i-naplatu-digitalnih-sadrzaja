@@ -38,6 +38,16 @@ cd json
 curl https://raw.githubusercontent.com/nlohmann/json/develop/single_include/nlohmann/json.hpp>json.h
 chmod 777 json.h
 ```
+Sa ciljem realizacije pohrane podataka korištena je SQLITE3 baza podataka. Neophodno je konfigursati Asio okruženje za podršku SQLITE3 bazi podataka. Koraci za instalaciju i konfiguraciju SQLITE3 baze podataka su:
+1. Instalacija sqlite3 biblioteke
+```
+apt-get install sqlite3 libsqlite3-dev
+```
+2. U root direktoriju Asio okruženja otvoriti direktorij +include+ te kreirati direktorij *sqlite3*
+3. U direktoriju *include/sqlite3* izvršiti komandu 
+```
+curl https://raw.githubusercontent.com/mickeyze/sqlite3_wrapper_c-11/refs/heads/master/include/sqlite3_wrapper/sqlite3_wrapper.h>sqlite3_wrapper.h
+```
 
 ## Uputstvo za pokretanje
 Nakon instalacije potrebnih dependency-ja, potrebno je kompajlirati izvorni kod u izvršne datoteke. Terminal pokrenuti u projektnom direktoriju.

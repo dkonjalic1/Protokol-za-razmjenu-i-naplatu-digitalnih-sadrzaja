@@ -52,7 +52,11 @@ Postojeće okruženje je nadograđeno sa podrškom za uspostavu sigurne TLS/SSL 
 ```
 apt-get install libssl-dev
 ```
-
+Za instalaciju OpenSSL-a, verzija 3.5.0 korištena je skripta *openssl_3_5_0_install.sh* dostupna na repozitoriju. 
+```
+chmod +x openssl_3_5_0_install.sh
+./openssl_3_5_0_install.sh
+```
 
 ## Uputstvo za pokretanje
 Nakon instalacije potrebnih dependency-ja, potrebno je kompajlirati izvorni kod u izvršne datoteke. Terminal pokrenuti u projektnom direktoriju.

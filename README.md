@@ -30,7 +30,14 @@ Za instalaciju Boost.Asio biblioteke Ubuntu/Debian sistemu:
 sudo apt update
 sudo apt-get install libboost-all-dev
 ```
-
+Boost.Asio se može kombinovati sa JSON bibliotekama kao što su nlohmann/json za obradu JSON podataka. Kako bi se omogućila podrška za JSON format podataka potrebno je JSON biblioteku pohraniti u direktorij *include*.
+```
+cd include
+mkdir json
+cd json
+curl https://raw.githubusercontent.com/nlohmann/json/develop/single_include/nlohmann/json.hpp>json.h
+chmod 777 json.h
+```
 
 ## Uputstvo za pokretanje
 Nakon instalacije potrebnih dependency-ja, potrebno je kompajlirati izvorni kod u izvršne datoteke. Terminal pokrenuti u projektnom direktoriju.

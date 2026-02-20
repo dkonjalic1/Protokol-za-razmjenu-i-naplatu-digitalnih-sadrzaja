@@ -1,4 +1,4 @@
-# Protokol-za-razmjenu-i-naplatu-digitalnih-sadrzaja
+# Protokol za razmjenu i naplatu digitalnih sadržaja
 
 Cilj ovog projekta je dizajnirati i implementirati protokol za razmjenu i naplatu digitalnih sadržaja u okviru mreže
 izdavača i pretplatnika. Protokol se sastoji iz dva dijela: server za distribuciju sadržaja i

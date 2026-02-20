@@ -50,7 +50,7 @@ Pokretanje izvršne client datoteke vrši se sljedećom komandom:
 ```
 ./client <serverip> <serverport>
 Primjer sa lokalne mašine: ./client 0.0.0.0 1111
-Primjer sa remote mašine (pod pretpostavkom da je ip adresa servera 100.100.129.2): ./client 100.100.129.2 1111
+Primjer sa remote mašine: ./client 100.100.129.2 1111
 ```
 Pokretanje izvršne test datoteke vrši se na dva načina, ovisno o tome želimo li provesti testiranje na već pokrenutom serveru, ili pokretavši specijalne servere za potrebe testiranja. Ukoliko pokrećemo test bez pretpostavke o prethodno pokrenutim serverima, dovoljno je pozvati sljedeću komandu:
 ```

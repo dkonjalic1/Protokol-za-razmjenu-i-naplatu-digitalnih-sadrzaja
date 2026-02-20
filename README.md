@@ -43,11 +43,16 @@ Sa ciljem realizacije pohrane podataka korištena je SQLITE3 baza podataka. Neop
 ```
 apt-get install sqlite3 libsqlite3-dev
 ```
-2. U root direktoriju Asio okruženja otvoriti direktorij +include+ te kreirati direktorij *sqlite3*
-3. U direktoriju *include/sqlite3* izvršiti komandu 
+2. U root direktoriju Asio okruženja otvoriti direktorij *include* te kreirati direktorij *sqlite3*
+3. U direktoriju *include/sqlite3* izvršiti komandu za korištenje alata *SQlite3 Wrapper* sa ciljem lakšeg upravljanja bazom  
 ```
 curl https://raw.githubusercontent.com/mickeyze/sqlite3_wrapper_c-11/refs/heads/master/include/sqlite3_wrapper/sqlite3_wrapper.h>sqlite3_wrapper.h
 ```
+Postojeće okruženje je nadograđeno sa podrškom za uspostavu sigurne TLS/SSL konekcije. Za integraciju TLS/SSL komunikacije u Asio okruženju potrebno je instalirati neophodne biblioteke
+```
+apt-get install libssl-dev
+```
+
 
 ## Uputstvo za pokretanje
 Nakon instalacije potrebnih dependency-ja, potrebno je kompajlirati izvorni kod u izvršne datoteke. Terminal pokrenuti u projektnom direktoriju.

@@ -54,9 +54,9 @@ Primjer sa remote mašine: ./client 100.100.129.2 1111
 ```
 Pokretanje izvršne test datoteke vrši se na dva načina, ovisno o tome želimo li provesti testiranje na već pokrenutom serveru, ili pokretavši specijalne servere za potrebe testiranja. Ukoliko pokrećemo test bez pretpostavke o prethodno pokrenutim serverima, dovoljno je pozvati sljedeću komandu:
 ```
-./test
+./test --log_level=nothing --report_level=detailed
 ```
 U slučaju da želimo provesti testiranje na već pokrenutom serveru na 0.0.0.0:1111, to činimo sljedećom komandom:
 ```
-./test
+SPAWN_SERVER=0 HOST=0.0.0.0 PORT=1111 ./test --log_level=nothing --report_level=detailed
 ```

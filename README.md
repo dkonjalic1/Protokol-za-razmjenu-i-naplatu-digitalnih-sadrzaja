@@ -12,7 +12,7 @@ fakultet, Odsjek za telekomunikacije.
 🟢 registracija korisnika na server pomoću URI-a (jedinstvenog alfanumeričkog identifikatora)<br>
 🟢 izdavač može objaviti digitalni sadržaj (tekstualni, video, audio, interaktivni) uz definisanje cijene pristupa<br>
 🟢 svaki korisnik može pregledati listu dostupnih sadržaja po kategorijama (npr. obrazovni, zabavni, tehnički)<br>
-   🟢 model pretplate: mjesečna pretplata na sadržaje odredenog izdavača, <br>
+   🟢 model pretplate: mjesečna pretplata na sadržaje određenog izdavača, <br>
    🟢 model pretplate: jednokratna kupovina pojedinačnog sadržaja,<br>
    🔴 model pretplate: grupna pretplata za više korisnika (porodični, akademski paket) **(NIJE IMPLEMENTIRANO)**<br>
 🟢 izdavači mogu ažurirati cijene i statuse svojih sadržaja<br>
@@ -21,8 +21,8 @@ fakultet, Odsjek za telekomunikacije.
    🟢 centralni server vodi registar: svih korisničkih naloga i statusa pretplate<br>
 🔴 uspostavljen sistem popusta na osnovu broja kupljenih sadržaja ili dužine pretplate (npr. 20% popusta nakon 10 kupljenih sadržaja) **(NIJE IMPLEMENTIRANO)**<br>
 🟢 pretplatnici mogu ocjenjivati sadržaje i davati komentare (uz moderaciju od strane izdavača)<br>
-🔴 implementiran regionalni sistem sa najmanje dva servera (npr. evropski i američki region) i omogućiti replikaciju i sinhronizaciju sadržaja izmedu regiona **(NIJE IMPLEMENTIRANO)**<br>
-🟢 sva signalizacija izmedu klijenata i izdavača mora ići isključivo preko servera<br>
+🔴 implementiran regionalni sistem sa najmanje dva servera (npr. evropski i američki region) i omogućiti replikaciju i sinhronizaciju sadržaja između regiona **(NIJE IMPLEMENTIRANO)**<br>
+🟢 sva signalizacija između klijenata i izdavača mora ići isključivo preko servera<br>
 
 ## Instalacija dependency-ja
 

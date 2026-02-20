@@ -57,6 +57,16 @@ Za instalaciju OpenSSL-a, verzija 3.5.0 korištena je skripta *openssl_3_5_0_ins
 chmod +x openssl_3_5_0_install.sh
 ./openssl_3_5_0_install.sh
 ```
+Nakon uspješne instalacije OpenSSL-a 3.5, može se provjeriti lista podržanih key-enkapsulacijskih mehanizama (KEM). KEM se koriste za sigurnu razmjenu zajedničkog tajnog ključa između klijenta i servera (korištena je kombinacija X25519MLKEM768) dok se digitalni potpisni algoritmi koriste za autentifikaciju i provjeru identiteta i integriteta poruka. Za digitalne potpise koristi se ML-DSA-44 što omogućava praktičnu demonstraciju PQC TLS-a.
+
+Generisanje privatnog ML-DSA-44 ključa:
+```
+openssl genpkey -algorithm ml-dsa-44 -out server-key.pem
+```
+Generisanje samopotpisanog certifikata:
+```
+openssl req -new -x509 -key server-key.pem -out server-cert.pem -days 365 -subj "/C=BA/ST=Sarajevo/L=Sarajevo/O=SDP.etf/OU=IT/CN=localhost" -sha256
+```
 
 ## Uputstvo za pokretanje
 Nakon instalacije potrebnih dependency-ja, potrebno je kompajlirati izvorni kod u izvršne datoteke. Terminal pokrenuti u projektnom direktoriju.
